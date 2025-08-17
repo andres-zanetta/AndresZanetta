@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contacto | Portfolio</title>
+</head>
+<body>
+    <div class="contact-box">
+        <h2>Contacto</h2>
+        <form id="contactForm" action="mailto:tuemail@dominio.com" method="POST" enctype="text/plain">
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="Nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="Apellido" required>
+            </div>
+            <div class="form-group">
+                <label for="consulta">Consulta</label>
+                <textarea id="consulta" name="Consulta" required></textarea>
+            </div>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+        <div id="msg"></div>
+    </div>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            var nombre = document.getElementById('nombre').value.trim();
+            var apellido = document.getElementById('apellido').value.trim();
+            var consulta = document.getElementById('consulta').value.trim();
+            var msg = document.getElementById('msg');
+            if (!nombre || !apellido || !consulta) {
+                e.preventDefault();
+                msg.textContent = "Por favor, completa todos los campos.";
+                msg.className = "error";
+            } else {
+                msg.textContent = "¡Gracias por tu consulta!";
+                msg.className = "success";
+            }
+        });
+    </script>
+    
