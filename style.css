@@ -200,6 +200,7 @@ article {
   z-index: -1;
 }
 
+
 .icon-box ion-icon { --ionicon-stroke-width: 35px; }
 
 article { display: none; }
@@ -564,6 +565,14 @@ main {
 .service-item-title {
   color: var(--white-2) !important;
 }
+.skills {
+  background-color:hsla(240, 1%, 17%, 0.75);   
+  color: whitesmoke;              /* texto negro para que contraste */
+  padding: 20px;             /* opcional: agrega espacio interno */
+  border-radius: 10px;       /* opcional: bordes redondeados */
+}
+
+
 
 /*-----------------------------------*\
   #TESTIMONIOS
