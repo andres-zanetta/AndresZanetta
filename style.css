@@ -902,6 +902,31 @@ main {
   border-radius: inherit;
 }
 
+.skill {
+  display: flex;
+  align-items: center; /* centra verticalmente imagen y texto */
+  gap: 15px; /* espacio entre imagen y texto */
+  margin-bottom: 20px; /* separación entre secciones */
+}
+
+.skill-icon {
+  width: 60px; /* ajustá según tu preferencia */
+  height: 60px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.skill-text h3 {
+  margin: 0;
+  font-weight: bold;
+  color: #fff;
+}
+
+.skill-text p {
+  margin: 5px 0 0;
+  color: #ccc;
+}
+
 
 /*-----------------------------------*\
   #PORTFOLIO
