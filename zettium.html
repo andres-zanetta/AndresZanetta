@@ -1,128 +1,150 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Zettium | Sistema de Gestión Técnica</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zettium | Sistema de Gestión Técnica</title>
+  <link rel="stylesheet" href="style.css" />
 
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
+
 <body>
+  <a class="skip-link" href="#content">Saltar al contenido</a>
 
-    <!-- HERO -->
-    <header class="hero">
-        <div class="hero-content">
-            <h1><strong>Zettium</strong></h1>
-            <p class="subtitle">
-                <strong>Sistema Integral de Gestión Técnica</strong> para presupuestos, obras y visitas técnicas.
-            </p>
-            <span class="badge"><strong>Proyecto Fullstack</strong> · .NET · Blazor · SQL Server</span>
+  <main class="layout">
+    <!-- Sidebar (misma estructura que index) -->
+    <aside class="sidebar" aria-label="Información del autor">
+      <div class="sidebar-card">
+        <div class="sidebar-header">
+          <figure class="avatar">
+            <img src="./assets/images/Perfil.png.jpg" alt="Foto" width="120" height="120" loading="lazy" />
+          </figure>
+          <div class="sidebar-title">
+            <h1>Zettium</h1>
+            <p class="role">Proyecto · .NET / Blazor</p>
+          </div>
         </div>
-    </header>
 
-    <!-- DESCRIPCIÓN -->
-    <main class="container">
-        <section class="section">
-            <h2>Descripción del Proyecto</h2>
-            <p>
-                <strong>Zettium</strong> es una aplicación web diseñada para empresas de servicios técnicos especializados en aires acondicionados, calefacción, electricidad, plomería, gas y energía solar.
-            </p>
-            <p>
-                El sistema facilita la gestión centralizada de clientes, presupuestos, obras y visitas técnicas, ofreciendo <strong>trazabilidad completa</strong>, <strong>automatización de cálculos</strong> y una interfaz moderna enfocada en la <strong>productividad operativa</strong>.
-            </p>
-        </section>
-    </main>
+        <div class="divider"></div>
 
-    <!-- FUNCIONALIDADES -->
-    <main class="container">
-        <section class="section">
-            <h2>Funcionalidades Principales</h2>
-            <ul class="features">
-                <li><strong>ABM Completo</strong>: Gestión integral de clientes, presupuestos y obras.</li>
-                <li><strong>Gestión de Ítems</strong>: Reutilización de materiales y servicios precargados.</li>
-                <li><strong>Control de Estados</strong>: Seguimiento de obras (iniciada, en proceso, finalizada).</li>
-                <li><strong>Agenda Visual</strong>: Programación y recordatorios de visitas técnicas.</li>
-                <li><strong>Historial Técnico</strong>: Registro detallado por cliente.</li>
-                <li><strong>Generación de PDFs</strong>: Presupuestos profesionales automatizados.</li>
-                <li><strong>Filtros y Búsqueda</strong>: Dinámicos y en tiempo real.</li>
-                <li><strong>Gestión Financiera</strong>: Control de costos, totales y materiales.</li>
-                <li><strong>Autenticación</strong>: Preparado para Identity Framework.</li>
-            </ul>
-        </section>
-    </main>
-
-    <!-- ARQUITECTURA -->
-    <main class="container">
-        <section class="section">
-            <h2>Arquitectura</h2>
-            <p>
-                El proyecto se desarrolló siguiendo los principios de <strong>Arquitectura Clean</strong>, con separación clara de responsabilidades para garantizar escalabilidad y mantenibilidad.
-            </p>
-
-            <div class="architecture">
-                <div class="card">
-                    <h3><strong>Zetta.BD</strong></h3>
-                    <p>Modelo de datos, entidades y configuración de <strong>Entity Framework Core</strong>.</p>
-                </div>
-                <div class="card">
-                    <h3><strong>Zetta.Shared</strong></h3>
-                    <p>DTOs, enums y contratos compartidos entre frontend y backend.</p>
-                </div>
-                <div class="card">
-                    <h3><strong>Zetta.Server</strong></h3>
-                    <p>API REST en <strong>.NET</strong> con servicios, repositorios y <strong>AutoMapper</strong>.</p>
-                </div>
-                <div class="card">
-                    <h3><strong>Zetta.Client</strong></h3>
-                    <p>Frontend <strong>Blazor WebAssembly</strong> con diseño responsive.</p>
-                </div>
+        <ul class="contact-list">
+          <li class="contact-item">
+            <span class="contact-icon" aria-hidden="true"><ion-icon name="briefcase-outline"></ion-icon></span>
+            <div class="contact-body">
+              <span class="contact-label">Tipo</span>
+              <span class="contact-text">Proyecto Profesional</span>
             </div>
-        </section>
-    </main>
-
-    <!-- TECNOLOGÍAS -->
-    <main class="container">
-        <section class="section">
-            <h2>Tecnologías Utilizadas</h2>
-            <div class="tech-stack">
-                <span><strong>.NET 8 / 9</strong></span>
-                <span><strong>Blazor WebAssembly</strong></span>
-                <span><strong>Entity Framework Core</strong></span>
-                <span><strong>SQL Server</strong></span>
-                <span><strong>AutoMapper</strong></span>
-                <span><strong>Bootstrap</strong></span>
-                <span><strong>HTML · CSS</strong></span>
-                <span><strong>Arquitectura Clean</strong></span>
+          </li>
+          <li class="contact-item">
+            <span class="contact-icon" aria-hidden="true"><ion-icon name="calendar-outline"></ion-icon></span>
+            <div class="contact-body">
+              <span class="contact-label">Periodo</span>
+              <span class="contact-text">Mayo 2025 — Dic 2025</span>
             </div>
-        </section>
-    </main>
+          </li>
+          <div class="quick-actions">
+            <a class="btn btn-ghost" href="index.html" target="_self">
+              <ion-icon name="arrow-back-outline" aria-hidden="true"></ion-icon>
+              Volver al portfolio
+            </a>
+          </div>
+        </ul>
+      </div>
+    </aside>
 
-    <!-- ROL -->
-    <main class="container">
-        <section class="section">
-            <h2>Rol en el Proyecto</h2>
-            <p>
-                Desarrollo <strong>fullstack</strong> del sistema, abarcando:
-            </p>
-            <ul class="features">
-                <li><strong>Diseño de Modelo de Datos</strong>: Estructura y relaciones.</li>
-                <li><strong>Implementación de API REST</strong>: Servicios y lógica backend.</li>
-                <li><strong>Desarrollo Frontend</strong>: Interfaz de usuario responsive.</li>
-                <li><strong>Documentación</strong>: Técnica y de usuario.</li>
-                <li><strong>Análisis Funcional</strong>: Casos de uso y requerimientos.</li>
-            </ul>
-        </section>
-    </main>
+    <!-- Content principal (usa mismas clases que index) -->
+    <div id="content" class="content" aria-label="Contenido proyecto Zettium">
+      <header class="topbar" aria-label="Navegación">
+        <nav class="nav">
+          <a class="nav-link" href="#descripcion">Descripción</a>
+          <a class="nav-link" href="#funcionalidades">Funcionalidades</a>
+          <a class="nav-link" href="#arquitectura">Arquitectura</a>
+          <a class="nav-link" href="#tecnologias">Tecnologías</a>
+          <a class="nav-link" href="#rol">Rol</a>
+        </nav>
+      </header>
 
-    <!-- FOOTER -->
-    <footer class="footer">
+      <section class="section-card" id="descripcion">
+        <h2 class="section-title">Descripción del Proyecto</h2>
+        <p class="lead">
+          <strong>Zettium</strong> es una aplicación web diseñada para empresas de servicios técnicos (aires acondicionados, calefacción, electricidad, plomería, gas y energía solar).
+        </p>
         <p>
-            Proyecto desarrollado por <strong>Andrés Zanetta</strong> y <strong>Leonardo Contreras</strong>.
+          Facilita la gestión centralizada de clientes, presupuestos, obras y visitas técnicas, con trazabilidad, automatización de cálculos y generación de presupuestos en PDF.
         </p>
-        <p class="small">
-            <strong>Zettium</strong> · Sistema de Gestión Técnica Integral.
-        </p>
-    </footer>
+      </section>
 
+      <section class="section-card" id="funcionalidades">
+        <h2 class="section-title">Funcionalidades Principales</h2>
+        <ul class="bullet">
+          <li><strong>ABM de Clientes y Presupuestos</strong></li>
+          <li><strong>Gestión de Ítems</strong> reutilizables</li>
+          <li><strong>Control de Estados</strong> para obras</li>
+          <li><strong>Agenda</strong> y recordatorios para visitas</li>
+          <li><strong>Exportación</strong> a PDF</li>
+        </ul>
+      </section>
+
+      <section class="section-card" id="arquitectura">
+        <h2 class="section-title">Arquitectura</h2>
+        <p>
+          Desarrollo siguiendo principios de <strong>Arquitectura Clean</strong>, separación por capas y uso de <strong>Entity Framework Core</strong> para persistencia.
+        </p>
+
+        <div class="projects">
+          <article class="project">
+            <div class="project-head">
+              <h3 class="project-title">Zetta.BD</h3>
+            </div>
+            <p class="project-desc">Modelo de datos y migraciones.</p>
+          </article>
+          <article class="project">
+            <div class="project-head">
+              <h3 class="project-title">Zetta.Server</h3>
+            </div>
+            <p class="project-desc">API en .NET con servicios y repositorios.</p>
+          </article>
+          <article class="project">
+            <div class="project-head">
+              <h3 class="project-title">Zetta.Client</h3>
+            </div>
+            <p class="project-desc">Frontend en Blazor WebAssembly.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-card" id="tecnologias">
+        <h2 class="section-title">Tecnologías Utilizadas</h2>
+        <div class="tags">
+          <span class="tag">.NET 8 / 9</span>
+          <span class="tag">Blazor</span>
+          <span class="tag">Entity Framework</span>
+          <span class="tag">SQL Server</span>
+        </div>
+      </section>
+
+      <section class="section-card" id="rol">
+        <h2 class="section-title">Rol en el Proyecto</h2>
+        <p class="lead">Desarrollo fullstack: diseño de modelo de datos, implementación de API y desarrollo frontend.</p>
+      </section>
+
+      <footer class="footer">
+        <span>Proyecto: <strong>Zettium</strong> — Andrés Nicolás Zanetta</span>
+      </footer>
+    </div>
+  </main>
+
+  <script>
+    // Si se necesita lógica simple en futuro
+  </script>
 </body>
 </html>
