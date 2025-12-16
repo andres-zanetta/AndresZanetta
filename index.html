@@ -1,324 +1,319 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Andres Zanetta</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <link rel="stylesheet" href="style.css" />
+  <title>Andrés Nicolás Zanetta | .NET Developer</title>
+
+  <meta name="description" content="Portfolio profesional de Andrés Nicolás Zanetta, desarrollador .NET: proyectos, experiencia, formación y contacto." />
+  <meta name="theme-color" content="#0f1115" />
 
   <!-- Favicon -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon" />
 
-  <!-- Hoja de estilos personalizada -->
-  <link rel="stylesheet" href="style.css">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=css" />
-  <style>
-.material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
-}
-</style>
-</head>
-
-<body>
-
-  <!-- INICIO PRINCIPAL -->
-  <main>
-
-    <!-- BARRA LATERAL -->
-    <aside class="sidebar" data-sidebar>
-      <div class="sidebar-info">
-        <figure class="avatar-box">
-          <img src="./assets/images/Perfil.png.jpg" alt="Andres Nicolas Zanetta" width="80">
-        </figure>
-        <div class="info-content">
-          <h1 class="name" title="Andres Nicolas Zanetta">Andrés <br> Nicolás Zanetta</h1>
-          <p class="title">.Net developer</p>
-        </div>
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-      </div>
-      <div class="sidebar-info_more">
-        <div class="separator"></div>
-        <ul class="contacts-list">
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-              <a href='mailto:andresnicolaszanetta@gmail.com' class="contact-link" target="_blank" rel="noopener">
-                andresnicolas <br> zanetta<br> 
-                @gmail.com
-              </a>
-            </div>
-          </li>
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Linkedin</p>
-              <a href="https://www.linkedin.com/in/andrés-zanetta-a63b31224" class="contact-link" target="_blank" rel="noopener">
-                Andres Zanetta
-              </a>
-            </div>
-          </li>
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Edad</p>
-              <time datetime="1982-06-23">22 </time>
-            </div>
-          </li>
-          <li class="contact-item">
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-            <div class="contact-info">
-              <p class="contact-title">Ubicación</p>
-              <address>Cordoba, Argentina</address>
-            </div>
-          </li>
-        </ul>
-        <div class="separator"></div>
-      </div>
-    </aside>
-
-    <!-- CONTENIDO PRINCIPAL -->
-    <div class="main-content">
-
-      <!-- SECCIÓN SOBRE MÍ -->
-      <article class="about active" data-page="about">
-        <header>
-          <h2 class="h2 article-title">Sobre mi</h2>
-        </header>
-        <section class="about-text">
-          <ul>
-            <li>Desarrollador backend en formación, enfocado en crear sistemas robustos y escalables.</li>
-            <br>
-            <li>Apasionado en <strong>.NET 8, 9</strong> y <strong>Entity Framework</strong> para arquitectura limpia y manejo eficiente de datos.</li>
-            <br>
-            <li>Experiencia en bases de datos relacionales (<strong>SQL Server</strong>, <strong>MySQL Workbench</strong>), diseño de esquemas y consultas complejas.</li>
-            <br>
-            <li>Conocimientos de frontend: <strong>HTML, CSS, JavaScript</strong> y <strong>Bootstrap</strong> para interfaces funcionales.</li>
-          </ul>
-        </section>
-
-        <!-- TESTIMONIOS -->
-        <section class="testimonials">
-          <h3 class="h3 testimonials-title">Testimonios</h3>
-          <ul class="testimonials-list has-scrollbar">
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-                <figure class="testimonials-avatar-box">
-                  <img src="img/Stefimg.jpeg" alt="Stefano Gaggero" width="60" data-testimonials-avatar>
-                </figure>
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Stefano Gaggero</h4>
-                <div class="testimonials-text" data-testimonials-text>
-                  <!-- <p>
-                    Andres Nicolas was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p> -->
-                  <p>
-                      <strong>GitHub:</strong>
-                    <a href="https://github.com/lucagaggero7" target="_blank" rel="noopener" style="word-break: break-all;">https://github.com/lucagaggero7</a>
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item style="word-break: break-word; overflow-wrap: break-word;">
-                <figure class="testimonials-avatar-box">
-                  <img src="img/Leo.jpg" alt="Leonardo Contreras" width="60" data-testimonials-avatar>
-                </figure>
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Leonardo Contreras</h4>
-                <div class="testimonials-text" data-testimonials-text style="word-break: break-word; overflow-wrap: break-word;">
-                  <!-- <p>
-                    Andres Nicolas was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p> -->
-                  <p>
-                    <strong>GitHub:</strong>
-                    <a href="https://github.com/leonardo829" target="_blank" rel="noopener" style="word-break: break-all;">https://github.com/leonardo829</a>
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-                <figure class="testimonials-avatar-box">
-                  <img src="img/Fran.jpeg" alt="Fran Piñero" width="60" data-testimonials-avatar>
-                </figure>
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Francisco Piñero</h4>
-                <div class="testimonials-text" data-testimonials-text>
-                  <!-- <p>
-                    Andres Nicolas was hired to create a corporate identity. We were very pleased with the work done. She has a
-                    lot of experience and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                    consectetur adipiscing elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                  </p> -->
-                   <p>
-                    <strong>GitHub:</strong>
-                    <a href="https://github.com/frannpineroo" target="_blank" rel="noopener" style="word-break: break-all;">https://github.com/frannpineroo</a>
-                  </p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </section>
-
-        <!-- HABILIDADES -->
-        <!-- <section class="skills">
-          <h3 class="h3 skills-title">Habilidades</h3>
-          <ul class="skills-list has-scrollbar">
-            <li class="skills-item">
-              <span class="skill-name"><strong>.NET 8 y 9</strong></span>
-              <span class="skill-desc">Especialización en desarrollo backend, arquitectura limpia y APIs robustas.</span>
-            </li>
-            <li class="skills-item">
-              <span class="skill-name"><strong>SQL Server</strong></span>
-              <span class="skill-desc">Diseño de bases de datos, consultas complejas y optimización de datos.</span>
-              <img src="img/SQL.png" alt="SQL Server" width="60" data-testimonials-avatar>
-            </li>
-            <li class="skills-item">
-              <span class="skill-name"><strong>HTML &amp; CSS</strong></span>
-              <span class="skill-desc">Interfaces funcionales y diseño responsive.</span>
-            </li>
-            <li class="skills-item">
-              <span class="skill-name"><strong>Backend</strong></span>
-              <span class="skill-desc">Enfoque en lógica de negocio, seguridad y escalabilidad de sistemas.</span>
-            </li>
-          </ul>
-        </section>
-        <br>
-        <br> -->
-      <section class="skills">
-        <h3 class="h3 skills-title">Habilidades</h3>
-        <ul class="skills-list has-scrollbar">
-         <li class="skills-item">
-          <span class="skill-name"><strong>.NET 8 y 9</strong></span>
-         <span class="skill-desc">Especialización en desarrollo backend, arquitectura limpia y APIs robustas.</span>
-        </li>
-
-        <li class="skills-item">
-          <div class="skill-content">
-            <img src="img/SQL.png" alt="SQL Server" class="skill-icon">
-            <div>
-              <span class="skill-name"><strong>SQL Server</strong></span>
-              <span class="skill-desc">Diseño de bases de datos, consultas complejas y optimización de datos.</span>
-            </div>
-          </div>
-        </li>
-
-        <li class="skills-item">
-            <span class="skill-name"><strong>HTML &amp; CSS</strong></span>
-            <span class="skill-desc">Interfaces funcionales y diseño responsive.</span>
-          </li>
-
-          <li class="skills-item">
-            <span class="skill-name"><strong>Backend</strong></span>
-            <span class="skill-desc">Enfoque en lógica de negocio, seguridad y escalabilidad de sistemas.</span>
-          </li>
-        </ul>
-      </section>
-
-<br><br>
-        <!-- RESUMEN -->
-        <article class="resume active" data-page="resume">
-          <section class="timeline">
-            <div class="title-wrapper">
-              <div class="icon-box">
-                <ion-icon name="book-outline"></ion-icon>
-              </div>
-              <h3 class="h3">Educación</h3>
-            </div>
-            <ol class="timeline-list">
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Instituto Técnico Superior Córdoba (ITSC)</h4>
-                <span>2023 — 2026</span>
-                <p class="timeline-text">
-                  Formación técnica orientada al desarrollo de software fullstack.  
-                  Me capacité en tecnologías frontend como <strong>HTML5, CSS3, JavaScript</strong> y <strong>Bootstrap</strong>, junto a herramientas backend como <strong>.NET 8 y 9</strong>, <strong>Entity Framework</strong> y <strong>C#</strong>.  
-                  También adquirí experiencia práctica en diseño de bases de datos y consultas con <strong>SQL Server</strong> y <strong>MySQL Workbench</strong>.  
-                  Los proyectos incluyeron el desarrollo de aplicaciones web y de escritorio, integrando modelos de datos, APIs y buenas prácticas de programación.
-                </p>
-              </li>
-            </ol>
-          </section>
-          <section class="timeline">
-            <div class="title-wrapper">
-              <div class="icon-box">
-                <ion-icon name="book-outline"></ion-icon>
-              </div>
-              <h3 class="h3">Experiencia</h3>
-            </div>
-            <ol class="timeline-list">
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Zetta Servicios</h4>
-                <span>2025 — Present</span>
-                <p class="timeline-text">
-                  Desarrollo de un sistema de gestión integral de presupuestos y posventa para servicios técnicos (aires acondicionados, calefacción, plomería, electricidad, gas, energía solar).
-                  El sistema incluye:
-                  ABM de presupuestos personalizados con ítems precargados y editables.
-                  Registro y autocompletado de clientes.
-                  Control de obras por estado (iniciada, en proceso, finalizada).
-                  Derivación de trabajos a terceros con cálculo automático de comisiones.
-                  Generación de reportes, PDF de presupuestos, agenda técnica y recordatorios.
-                  Gestión financiera detallada (ingresos, egresos, medios de pago, proveedores).
-                  Tecnologías utilizadas: .NET 8, Entity Framework, SQL Server, Blazor, diseño responsive con una arquitectura en 4 capas.
-                </p>
-                <a href="https://github.com/andres-zanetta/Zetta" target="_blank" rel="noopener" class="timeline-link">
-                    Ver repositorio en GitHub
-                </a>
-              </li>
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Concesionaria 2024</h4>
-                <span>2024</span>
-                <p class="timeline-text">
-                  Diseño y desarrollo de un sistema personalizado para una concesionaria con foco en la administración de planes de ahorro.
-                  El sistema permitía:
-                  Registro de clientes y seguimiento individual de su historial.
-                  Control de cuotas, adjudicaciones y entregas.
-                  Gestión de cobranzas, vencimientos y reportes mensuales.
-                  Administración de grupos de ahorro, datos de vehículos y documentación asociada.
-                  Tecnologías utilizadas: .NET8, SQL Server, arquitectura Clean, Bootstrap, automatización de cálculos.
-                </p>
-                  <a href="https://github.com/andres-zanetta/Concesionaria2024" target="_blank" rel="noopener" class="timeline-link">
-                    Ver repositorio en GitHub
-                </a>
-              </li>
-            </ol>
-          </section>
-        </article>
-      </article>
-    </div>
-
-    </div>
-
-  </main>
-
-  <!-- Script personalizado -->
-  <script src="./assets/js/script.js"></script>
-
-  <!-- Ionicons -->
+  <!-- Icons -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-</body>
+  <!-- Styles -->
+  <link rel="stylesheet" href="style_updated.css" />
+</head>
 
+<body>
+  <a class="skip-link" href="#content">Saltar al contenido</a>
+
+  <main class="layout">
+    <!-- Sidebar -->
+    <aside class="sidebar" aria-label="Información personal">
+      <div class="sidebar-card">
+        <div class="sidebar-header">
+          <figure class="avatar">
+            <img src="./assets/images/Perfil.png.jpg" alt="Foto de Andrés Nicolás Zanetta" width="96" height="96" loading="lazy" />
+          </figure>
+
+          <div class="sidebar-title">
+            <h1>Andrés Nicolás Zanetta</h1>
+            <p class="role">.NET Developer</p>
+
+            <div class="quick-actions" aria-label="Accesos rápidos">
+              <a class="btn btn-primary" href="https://www.linkedin.com/in/andrés-zanetta-a63b31224" target="_blank" rel="noopener">
+                <ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon>
+                LinkedIn
+              </a>
+              <a class="btn btn-ghost" href="https://github.com/andres-zanetta" target="_blank" rel="noopener">
+                <ion-icon name="logo-github" aria-hidden="true"></ion-icon>
+                GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <ul class="contact-list" aria-label="Datos de contacto">
+          <li class="contact-item">
+            <span class="contact-icon" aria-hidden="true"><ion-icon name="mail-outline"></ion-icon></span>
+            <div class="contact-body">
+              <span class="contact-label">Email</span>
+              <a class="contact-link" href="mailto:andresnicolaszanetta@gmail.com" target="_blank" rel="noopener">
+                andresnicolaszanetta@gmail.com
+              </a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <span class="contact-icon" aria-hidden="true"><ion-icon name="location-outline"></ion-icon></span>
+            <div class="contact-body">
+              <span class="contact-label">Ubicación</span>
+              <span class="contact-text">Córdoba, Argentina</span>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <span class="contact-icon" aria-hidden="true"><ion-icon name="logo-linkedin"></ion-icon></span>
+            <div class="contact-body">
+              <span class="contact-label">LinkedIn</span>
+              <a class="contact-link" href="https://www.linkedin.com/in/andrés-zanetta-a63b31224" target="_blank" rel="noopener">
+                /in/andrés-zanetta-a63b31224
+              </a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <span class="contact-icon" aria-hidden="true"><ion-icon name="logo-github"></ion-icon></span>
+            <div class="contact-body">
+              <span class="contact-label">GitHub</span>
+              <a class="contact-link" href="https://github.com/andres-zanetta" target="_blank" rel="noopener">
+                github.com/andres-zanetta
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Content -->
+    <div id="content" class="content" aria-label="Contenido principal">
+      <header class="topbar" aria-label="Navegación">
+        <nav class="nav">
+          <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+          <a class="nav-link" href="#habilidades">Habilidades</a>
+          <a class="nav-link" href="#educacion">Educación</a>
+          <a class="nav-link" href="#experiencia">Experiencia</a>
+          <a class="nav-link" href="#proyectos">Proyectos</a>
+          <a class="nav-link" href="#contacto">Contacto</a>
+        </nav>
+      </header>
+
+      <section class="section-card" id="sobre-mi">
+        <h2 class="section-title">Sobre mí</h2>
+        <p class="lead">
+          Desarrollador backend en formación, con foco en construir sistemas robustos y escalables en el ecosistema .NET.
+          Me interesa la arquitectura limpia, el modelado de datos y la entrega de soluciones mantenibles, con buena experiencia de usuario.
+        </p>
+
+        <ul class="bullet">
+          <li>Stack principal: <strong>.NET 8/9</strong>, <strong>C#</strong>, <strong>Entity Framework</strong>.</li>
+          <li>Bases de datos: <strong>SQL Server</strong> y <strong>MySQL</strong> (diseño, consultas y optimización).</li>
+          <li>Frontend: <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> y <strong>Bootstrap</strong>.</li>
+          <li>Buenas prácticas: separación por capas, validaciones, DTOs, repositorios, documentación y control de versiones.</li>
+        </ul>
+      </section>
+
+      <section class="section-card" id="habilidades">
+        <h2 class="section-title">Habilidades</h2>
+
+        <div class="skills-grid">
+          <div class="skill">
+            <div class="skill-head">
+              <span class="skill-title">.NET 8/9</span>
+              <span class="tag">Backend</span>
+            </div>
+            <p class="skill-text">APIs, lógica de negocio, arquitectura en capas, patrones y mantenimiento.</p>
+          </div>
+
+          <div class="skill">
+            <div class="skill-head">
+              <span class="skill-title">Entity Framework</span>
+              <span class="tag">ORM</span>
+            </div>
+            <p class="skill-text">Modelado de entidades, migrations, consultas y performance.</p>
+          </div>
+
+          <div class="skill">
+            <div class="skill-head">
+              <span class="skill-title">SQL Server</span>
+              <span class="tag">Data</span>
+            </div>
+            <p class="skill-text">Diseño de esquemas, queries complejas, índices y reportes.</p>
+          </div>
+
+          <div class="skill">
+            <div class="skill-head">
+              <span class="skill-title">Frontend</span>
+              <span class="tag">UI</span>
+            </div>
+            <p class="skill-text">Interfaces responsive con HTML/CSS/JS y Bootstrap.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-card" id="educacion">
+        <h2 class="section-title">Educación</h2>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-body">
+              <h3 class="timeline-title">Instituto Técnico Superior Córdoba (ITSC)</h3>
+              <p class="timeline-meta">2023 — 2026</p>
+              <p class="timeline-text">
+                Formación técnica orientada al desarrollo de software fullstack. Prácticas con tecnologías frontend
+                (HTML5, CSS3, JavaScript, Bootstrap) y backend (.NET, Entity Framework, C#), además de bases de datos
+                relacionales (SQL Server y MySQL).
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-card" id="experiencia">
+        <h2 class="section-title">Experiencia</h2>
+
+        <div class="projects">
+          <article class="project">
+            <div class="project-head">
+              <h3 class="project-title">Zettium</h3>
+              <p class="project-meta">Mayo 2025 — Diciembre 2025</p>
+            </div>
+            <p class="project-desc">
+              Sistema de gestión de presupuestos y posventa para servicios técnicos (aires acondicionados, calefacción,
+              plomería, electricidad, gas y energía solar).
+            </p>
+            <ul class="bullet">
+              <li>ABM de presupuestos con ítems precargados y editables.</li>
+              <li>Clientes con autocompletado y trazabilidad.</li>
+              <li>Gestión de obras por estado y derivación a terceros con cálculo de comisiones.</li>
+              <li>Reportes, exportación a PDF, agenda técnica y recordatorios.</li>
+              <li>Gestión financiera: ingresos/egresos, medios de pago y proveedores.</li>
+            </ul>
+            <div class="project-footer">
+              <div class="tags">
+                <span class="tag">.NET 8</span>
+                <span class="tag">EF</span>
+                <span class="tag">SQL Server</span>
+                <span class="tag">Blazor</span>
+              </div>
+              <a class="btn btn-ghost" href="https://github.com/andres-zanetta/Zetta" target="_blank" rel="noopener">
+                <ion-icon name="logo-github" aria-hidden="true"></ion-icon>
+                Ver repositorio
+              </a>
+            </div>
+          </article>
+
+          <article class="project">
+            <div class="project-head">
+              <h3 class="project-title">Concesionaria 2024</h3>
+              <p class="project-meta">Agosto 2024 — Diciembre 2024</p>
+            </div>
+            <p class="project-desc">
+              Sistema para administración de planes de ahorro: clientes, cuotas, adjudicaciones, entregas y reportes.
+            </p>
+            <ul class="bullet">
+              <li>Seguimiento de cuotas, vencimientos y cobranzas.</li>
+              <li>Gestión de grupos, vehículos y documentación asociada.</li>
+              <li>Automatización de cálculos y reportes mensuales.</li>
+            </ul>
+            <div class="project-footer">
+              <div class="tags">
+                <span class="tag">.NET</span>
+                <span class="tag">SQL Server</span>
+                <span class="tag">Clean Architecture</span>
+                <span class="tag">Bootstrap</span>
+              </div>
+              <a class="btn btn-ghost" href="https://github.com/andres-zanetta/Concesionaria2024" target="_blank" rel="noopener">
+                <ion-icon name="logo-github" aria-hidden="true"></ion-icon>
+                Ver repositorio
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-card" id="proyectos">
+        <h2 class="section-title">Referencias</h2>
+        <p class="muted">Perfiles de colegas/colaboradores (GitHub) para validar trabajo en equipo y actividad.</p>
+
+        <div class="refs">
+          <a class="ref-card" href="https://github.com/lucagaggero7" target="_blank" rel="noopener">
+            <div class="ref-head">
+              <img src="img/Stefimg.jpeg" alt="Foto de Stefano Gaggero" width="48" height="48" loading="lazy" />
+              <div>
+                <div class="ref-name">Stefano Gaggero</div>
+                <div class="ref-sub">GitHub</div>
+              </div>
+            </div>
+            <div class="ref-link">github.com/lucagaggero7</div>
+          </a>
+
+          <a class="ref-card" href="https://github.com/leonardo829" target="_blank" rel="noopener">
+            <div class="ref-head">
+              <img src="img/Leo.jpg" alt="Foto de Leonardo Contreras" width="48" height="48" loading="lazy" />
+              <div>
+                <div class="ref-name">Leonardo Contreras</div>
+                <div class="ref-sub">GitHub</div>
+              </div>
+            </div>
+            <div class="ref-link">github.com/leonardo829</div>
+          </a>
+
+          <a class="ref-card" href="https://github.com/frannpineroo" target="_blank" rel="noopener">
+            <div class="ref-head">
+              <img src="img/Fran.jpeg" alt="Foto de Francisco Piñero" width="48" height="48" loading="lazy" />
+              <div>
+                <div class="ref-name">Francisco Piñero</div>
+                <div class="ref-sub">GitHub</div>
+              </div>
+            </div>
+            <div class="ref-link">github.com/frannpineroo</div>
+          </a>
+        </div>
+      </section>
+
+      <section class="section-card" id="contacto">
+        <h2 class="section-title">Contacto</h2>
+        <p class="lead">
+          Si querés contactarme por una oportunidad o proyecto, podés escribirme por email o LinkedIn.
+        </p>
+
+        <div class="contact-cta">
+          <a class="btn btn-primary" href="mailto:andresnicolaszanetta@gmail.com" target="_blank" rel="noopener">
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+            Enviar email
+          </a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/andrés-zanetta-a63b31224" target="_blank" rel="noopener">
+            <ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon>
+            Abrir LinkedIn
+          </a>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span>© <span id="year"></span> Andrés Nicolás Zanetta</span>
+      </footer>
+    </div>
+  </main>
+
+  <script>
+    // Año automático en el footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>

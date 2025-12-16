@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Zettium | Sistema de Gestión Técnica</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!-- HERO -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1><strong>Zettium</strong></h1>
+            <p class="subtitle">
+                <strong>Sistema Integral de Gestión Técnica</strong> para presupuestos, obras y visitas técnicas.
+            </p>
+            <span class="badge"><strong>Proyecto Fullstack</strong> · .NET · Blazor · SQL Server</span>
+        </div>
+    </header>
+
+    <!-- DESCRIPCIÓN -->
+    <main class="container">
+        <section class="section">
+            <h2>Descripción del Proyecto</h2>
+            <p>
+                <strong>Zettium</strong> es una aplicación web diseñada para empresas de servicios técnicos especializados en aires acondicionados, calefacción, electricidad, plomería, gas y energía solar.
+            </p>
+            <p>
+                El sistema facilita la gestión centralizada de clientes, presupuestos, obras y visitas técnicas, ofreciendo <strong>trazabilidad completa</strong>, <strong>automatización de cálculos</strong> y una interfaz moderna enfocada en la <strong>productividad operativa</strong>.
+            </p>
+        </section>
+    </main>
+
+    <!-- FUNCIONALIDADES -->
+    <main class="container">
+        <section class="section">
+            <h2>Funcionalidades Principales</h2>
+            <ul class="features">
+                <li><strong>ABM Completo</strong>: Gestión integral de clientes, presupuestos y obras.</li>
+                <li><strong>Gestión de Ítems</strong>: Reutilización de materiales y servicios precargados.</li>
+                <li><strong>Control de Estados</strong>: Seguimiento de obras (iniciada, en proceso, finalizada).</li>
+                <li><strong>Agenda Visual</strong>: Programación y recordatorios de visitas técnicas.</li>
+                <li><strong>Historial Técnico</strong>: Registro detallado por cliente.</li>
+                <li><strong>Generación de PDFs</strong>: Presupuestos profesionales automatizados.</li>
+                <li><strong>Filtros y Búsqueda</strong>: Dinámicos y en tiempo real.</li>
+                <li><strong>Gestión Financiera</strong>: Control de costos, totales y materiales.</li>
+                <li><strong>Autenticación</strong>: Preparado para Identity Framework.</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- ARQUITECTURA -->
+    <main class="container">
+        <section class="section">
+            <h2>Arquitectura</h2>
+            <p>
+                El proyecto se desarrolló siguiendo los principios de <strong>Arquitectura Clean</strong>, con separación clara de responsabilidades para garantizar escalabilidad y mantenibilidad.
+            </p>
+
+            <div class="architecture">
+                <div class="card">
+                    <h3><strong>Zetta.BD</strong></h3>
+                    <p>Modelo de datos, entidades y configuración de <strong>Entity Framework Core</strong>.</p>
+                </div>
+                <div class="card">
+                    <h3><strong>Zetta.Shared</strong></h3>
+                    <p>DTOs, enums y contratos compartidos entre frontend y backend.</p>
+                </div>
+                <div class="card">
+                    <h3><strong>Zetta.Server</strong></h3>
+                    <p>API REST en <strong>.NET</strong> con servicios, repositorios y <strong>AutoMapper</strong>.</p>
+                </div>
+                <div class="card">
+                    <h3><strong>Zetta.Client</strong></h3>
+                    <p>Frontend <strong>Blazor WebAssembly</strong> con diseño responsive.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- TECNOLOGÍAS -->
+    <main class="container">
+        <section class="section">
+            <h2>Tecnologías Utilizadas</h2>
+            <div class="tech-stack">
+                <span><strong>.NET 8 / 9</strong></span>
+                <span><strong>Blazor WebAssembly</strong></span>
+                <span><strong>Entity Framework Core</strong></span>
+                <span><strong>SQL Server</strong></span>
+                <span><strong>AutoMapper</strong></span>
+                <span><strong>Bootstrap</strong></span>
+                <span><strong>HTML · CSS</strong></span>
+                <span><strong>Arquitectura Clean</strong></span>
+            </div>
+        </section>
+    </main>
+
+    <!-- ROL -->
+    <main class="container">
+        <section class="section">
+            <h2>Rol en el Proyecto</h2>
+            <p>
+                Desarrollo <strong>fullstack</strong> del sistema, abarcando:
+            </p>
+            <ul class="features">
+                <li><strong>Diseño de Modelo de Datos</strong>: Estructura y relaciones.</li>
+                <li><strong>Implementación de API REST</strong>: Servicios y lógica backend.</li>
+                <li><strong>Desarrollo Frontend</strong>: Interfaz de usuario responsive.</li>
+                <li><strong>Documentación</strong>: Técnica y de usuario.</li>
+                <li><strong>Análisis Funcional</strong>: Casos de uso y requerimientos.</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>
+            Proyecto desarrollado por <strong>Andrés Zanetta</strong> y <strong>Leonardo Contreras</strong>.
+        </p>
+        <p class="small">
+            <strong>Zettium</strong> · Sistema de Gestión Técnica Integral.
+        </p>
+    </footer>
+
+</body>
+</html>
