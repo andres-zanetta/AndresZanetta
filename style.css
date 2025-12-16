@@ -472,3 +472,33 @@ strong{ color: rgba(255,255,255,.96); }
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
+/* Ajustes específicos para zettium.html: asegurar textos blancos y bloques coherentes */
+.section-card,
+.section{
+  background: rgba(21,25,36,.92);
+}
+
+.section-title{
+  color: var(--text);
+}
+
+.section-card h2, .section h2, .project-title, .project-desc, .bullet li, .tag, .contact-text {
+  color: var(--text) !important;
+}
+
+/* Asegurar que las tarjetas de arquitectura estén en columna en pantallas grandes para formalidad */
+.architecture{ display:flex; flex-direction:column; gap:14px; }
+.card{ width:100%; }
+
+/* Separación vertical entre secciones del content (mantener look de index) */
+.section-card{ margin-bottom:18px; }
+
+/* Forzar legibilidad de badges/tags */
+.tag{ background: rgba(245,197,66,.10); color: rgba(255,255,255,.95); }
+
+/* Menú nav similar a index ya está; asegurar color */
+.nav-link{ color: rgba(255,255,255,.88); }
+
+/* Footer más firme */
+.footer{ color: rgba(255,255,255,.65); }
