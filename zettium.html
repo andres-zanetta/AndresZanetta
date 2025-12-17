@@ -30,7 +30,7 @@
           </figure>
           <div class="sidebar-title">
             <h1>Zettium</h1>
-            <p class="role">Proyecto · .NET / Blazor</p>
+            <p class="role">Proyecto.NET / Blazor</p>
           </div>
         </div>
 
@@ -111,7 +111,8 @@
             <div class="project-head">
               <h3 class="project-title">Zetta.Server</h3>
             </div>
-            <p class="project-desc">API en .NET con servicios y repositorios.</p>
+            <p class="project-desc">API en .NET con carpetas donde se guardaron servicios y repositorios.</p>
+            <p class="project-desc">Utilizacion de la herramienta AutoMapper.</p>
           </article>
           <article class="project">
             <div class="project-head">
@@ -135,6 +136,7 @@
           <span class="tag">Blazor</span>
           <span class="tag">Entity Framework</span>
           <span class="tag">SQL Server</span>
+          <span class="tag">AutoMapper</span>
         </div>
       </section>
 
@@ -143,14 +145,106 @@
         <p class="lead">Desarrollo fullstack: diseño de modelo de datos, implementación de API y desarrollo frontend.</p>
       </section>
 
+      <section class="zet-carousel" aria-label="Capturas de Zettium">
+        <button class="zet-carousel__btn prev" type="button" aria-label="Anterior"></button>
+
+        <div class="zet-carousel__track" id="zetTrack">
+          <article class="zet-carousel__slide">
+            <img src="img/InicioZ.png" alt="Zettium - Pantalla 1" loading="lazy">
+          </article>
+
+          <article class="zet-carousel__slide">
+            <img src="img/GestionPresupuestos.png" alt="Zettium - Pantalla 4" loading="lazy">
+          </article>
+
+          <article class="zet-carousel__slide">
+            <img src="img/GestionClientes.png" alt="Zettium - Pantalla 3" loading="lazy">
+          </article>
+          
+          <article class="zet-carousel__slide">
+            <img src="img/GestionObras.png" alt="Zettium - Pantalla Detalle Presupuesto" loading="lazy">
+          </article>
+
+          <article class="zet-carousel__slide">
+            <img src="img/GestionItems.png" alt="Zettium - Pantalla 2" loading="lazy">
+          </article>
+
+          <article class="zet-carousel__slide">
+            <img src="img/GestionVisitas.png" alt="Zettium - Pantalla 5" loading="lazy">
+          </article>
+
+        </div>
+
+        <button class="zet-carousel__btn next" type="button" aria-label="Siguiente"></button>
+
+        <div class="zet-carousel__dots" id="zetDots" aria-label="Indicadores"></div>
+      </section>
+
       <footer class="footer">
-        <span>Proyecto: <strong>Zettium</strong> — Andrés Nicolás Zanetta</span>
+        <span>Proyecto: <strong>Zettium</strong> — Andrés Nicolás Zanetta, Leonardo Contreras</span>
       </footer>
     </div>
   </main>
 
   <script>
-    // Si se necesita lógica simple en futuro
+    // Carrusel de Zettium
+    document.addEventListener('DOMContentLoaded', () => {
+      const track = document.getElementById('zetTrack');
+      const prevBtn = document.querySelector('.zet-carousel__btn.prev');
+      const nextBtn = document.querySelector('.zet-carousel__btn.next');
+      const dotsContainer = document.getElementById('zetDots');
+      const slides = track.children;
+      let currentIndex = 0;
+
+      // Crear dots dinámicamente
+      for (let i = 0; i < slides.length; i++) {
+        const dot = document.createElement('button');
+        dot.className = 'zet-carousel__dot';
+        dot.type = 'button';
+        dot.setAttribute('aria-label', `Ir a slide ${i + 1}`);
+        dot.addEventListener('click', () => goToSlide(i));
+        dotsContainer.appendChild(dot);
+      }
+      const dots = dotsContainer.children;
+
+      // Función para ir a un slide
+      function goToSlide(index) {
+        currentIndex = index;
+        track.scrollTo({
+          left: slides[index].offsetLeft,
+          behavior: 'smooth'
+        });
+        updateDots();
+      }
+
+      // Actualizar dots activos
+      function updateDots() {
+        for (let i = 0; i < dots.length; i++) {
+          dots[i].classList.toggle('is-active', i === currentIndex);
+        }
+      }
+
+      // Botones prev/next
+      prevBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        goToSlide(currentIndex);
+      });
+
+      nextBtn.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % slides.length;
+        goToSlide(currentIndex);
+      });
+
+      // Detectar scroll manual para actualizar dots
+      track.addEventListener('scroll', () => {
+        const slideWidth = slides[0].offsetWidth;
+        currentIndex = Math.round(track.scrollLeft / slideWidth);
+        updateDots();
+      });
+
+      // Inicializar
+      updateDots();
+    });
   </script>
 </body>
 </html>

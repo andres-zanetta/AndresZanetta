@@ -134,6 +134,46 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }
 
+(function () {
+    const track = document.getElementById("zetTrack");
+    const dotsWrap = document.getElementById("zetDots");
+    const slides = Array.from(track.querySelectorAll(".zet-carousel__slide"));
+
+    // Crear dots según cantidad de slides
+    slides.forEach((_, i) => {
+      const b = document.createElement("button");
+      b.className = "zet-carousel__dot" + (i === 0 ? " is-active" : "");
+      b.type = "button";
+      b.ariaLabel = "Ir a slide " + (i + 1);
+      b.addEventListener("click", () => scrollToIndex(i));
+      dotsWrap.appendChild(b);
+    });
+
+    const dots = Array.from(dotsWrap.children);
+
+    function scrollToIndex(i){
+      const w = track.clientWidth;
+      track.scrollTo({ left: i * (w + 16), behavior: "smooth" }); // 16 = gap
+    }
+
+    function activeDot(){
+      const w = track.clientWidth;
+      const i = Math.round(track.scrollLeft / (w + 16));
+      dots.forEach((d, idx) => d.classList.toggle("is-active", idx === i));
+    }
+
+    document.querySelector(".zet-carousel__btn.prev").addEventListener("click", () => {
+      const w = track.clientWidth;
+      track.scrollBy({ left: -(w + 16), behavior: "smooth" });
+    });
+
+    document.querySelector(".zet-carousel__btn.next").addEventListener("click", () => {
+      const w = track.clientWidth;
+      track.scrollBy({ left: (w + 16), behavior: "smooth" });
+    });
+
+    track.addEventListener("scroll", () => requestAnimationFrame(activeDot));
+  })();
 
 
 // page navigation variables
